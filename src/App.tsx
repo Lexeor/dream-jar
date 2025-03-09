@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { toast, Toaster } from "react-hot-toast";
+import Header from "./components/Header.tsx";
 
 const colors = ["#FFC3A0", "#FFD700", "#98FB98", "#87CEFA", "#FFB6C1"];
 
@@ -37,6 +38,7 @@ export default function App() {
 
   return (
     <AppContainer>
+      <Header />
       <Toaster />
       <Button onClick={addSticker} invisible={stickers.length > 0}>Добавить стикер</Button>
       {stickers.map(({ id, x, y, color, text }) => (
