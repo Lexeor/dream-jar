@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <Root>
       <Logo onClick={() => {
         setCount((count) => count + 1);
       }}>
@@ -19,12 +19,20 @@ function App() {
           <h1>Bot still doesn't work yet</h1>
         )
       }
-    </>
+    </Root>
   )
 }
 
+const Root = styled.div`
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const Logo = styled.div`
-  height: 400px;
+  height: 200px;
   margin-bottom: 48px;
   
   img {
