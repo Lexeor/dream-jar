@@ -1,11 +1,18 @@
 import styled from "@emotion/styled";
 import {Avatar} from "antd";
+import { FC } from "react";
+import {useUserStore} from "../stores/user.ts";
 
-const Header = () => {
+const Header: FC = () => {
+  const usr = useUserStore((state: any) => state.user); // Access the user data
+
   return (
     <Root>
       <h3>Dream Jar</h3>
-      <Avatar />
+      <div>
+        <span>{usr}</span>
+        <Avatar />
+      </div>
     </Root>
   );
 };
