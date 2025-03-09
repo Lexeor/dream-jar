@@ -10,7 +10,7 @@ const Header: FC = () => {
     <Root>
       <h3>Dream Jar</h3>
       <div>
-        <span>{usr}</span>
+        <span>{usr?.first_name}</span>
         <Avatar />
       </div>
     </Root>
