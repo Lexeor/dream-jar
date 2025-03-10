@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { toast, Toaster } from "react-hot-toast";
