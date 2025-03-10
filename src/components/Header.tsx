@@ -7,11 +7,11 @@ import { jwtDecode } from "jwt-decode";
 import { googleLogout } from '@react-oauth/google';
 import {toast} from "react-hot-toast";
 
-interface IUser {
-  name: string;
-  email: string;
-  picture: string;
-}
+// interface IUser {
+//   name: string;
+//   email: string;
+//   picture: string;
+// }
 
 const Header: FC = () => {
   const userStore = useUserStore();
