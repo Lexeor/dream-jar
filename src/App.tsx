@@ -40,6 +40,7 @@ export default function App() {
     <AppContainer>
       <Header />
       <Toaster />
+
       <Button onClick={addSticker} invisible={stickers.length > 0}>Добавить стикер</Button>
       {stickers.map(({ id, x, y, color, text }) => (
         <Sticker
